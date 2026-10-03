@@ -1,0 +1,17 @@
+{
+  "name": "bus-path-editor-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API và công cụ kéo thả sửa lộ trình / trạm xe buýt TP.HCM",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "db:import": "node scripts/import_busdata_sql.js",
+    "db:export": "node scripts/export_busdata_sql.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7"
+  }
+}
